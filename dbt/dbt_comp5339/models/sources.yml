@@ -1,0 +1,38 @@
+# version: 2
+# sources:
+#   - name: import
+#     schema: import
+#     tables:
+#       - name: customers
+#         identifier: customers
+#       - name: products
+#         identifier: products
+#       - name: resellers
+#         identifier: resellers
+#       - name: transactions
+#         identifier: transactions
+#       - name: channels
+#         identifier: channels
+#   - name: preprocessed
+#     schema: staging
+#     tables:
+#       - name: resellerxmlextracted
+#         identifier: resellerxmlextracted
+
+version: 2
+sources:
+  - name: import
+    schema: import
+    tables:
+      - name: patients_dw
+        identifier: patients_dw
+      - name: ecg_recordings_dw
+        identifier: ecg_recordings_dw
+      - name: hospitals_dw
+        identifier: hospitals_dw
+      - name: diagnoses_dw
+        identifier: diagnoses_dw
+      - name: ecg_metadata_dw
+        identifier: ecg_metadata_dw
+      - name: fold_assignment_dw
+        identifier: fold_assignment_dw
